@@ -1,0 +1,54 @@
+<?php
+function custom_scripts() {
+    wp_enqueue_style('style', get_template_directory_uri().'/style.css');
+    wp_enqueue_style('main', get_template_directory_uri().'/css/main.min.css');
+    wp_enqueue_script('scripts', get_template_directory_uri().'/js/scripts.min.js');    
+}
+add_action('wp_enqueue_scripts', 'custom_scripts');
+
+add_theme_support( 'post-thumbnails' );
+
+add_theme_support('do_shortcode');
+
+// Register Custom Navigation Walker
+ require_once('wp_bootstrap_navwalker.php');
+ 
+ register_nav_menus( array(
+     'main' => __( 'Main Menu', 'example' ),
+     'mobile' => __( 'Mobile Menu', 'example' ),
+ ) );
+
+
+add_action('customize_register', function($customizer){
+
+    //contacts
+    $customizer->add_section( 'header', array('title' => 'Настройка контактов','description' => '','priority' => 10,));
+    $customizer->add_setting( 'lozung', array('default' => ''));
+    $customizer->add_control( 'lozung', array('label' => 'Лозунг','section' => 'header','type' => 'textarea',));
+
+    //соц сети
+    $customizer->add_setting( 'insta', array('default' => ''));
+    $customizer->add_control( 'insta', array('label' => 'Instagram','section' => 'header','type' => 'text',));
+
+    $customizer->add_setting( 'email', array('default' => ''));
+    $customizer->add_control( 'email', array('label' => 'Email','section' => 'header','type' => 'text',));
+
+    $customizer->add_setting( 'whatsapp', array('default' => ''));
+    $customizer->add_control( 'whatsapp', array('label' => 'Whatsapp','section' => 'header','type' => 'text',));
+
+    $customizer->add_setting( 'facebook', array('default' => ''));
+    $customizer->add_control( 'facebook', array('label' => 'Facebook','section' => 'header','type' => 'text',));
+
+    //Номера
+    $customizer->add_setting( 'number1', array('default' => ''));
+    $customizer->add_control( 'number1', array('label' => 'Номер 1','section' => 'header','type' => 'text',));
+    $customizer->add_setting( 'number2', array('default' => ''));
+    $customizer->add_control( 'number2', array('label' => 'Номер 2','section' => 'header','type' => 'text',));
+
+    
+});
+
+
+
+
+ 
