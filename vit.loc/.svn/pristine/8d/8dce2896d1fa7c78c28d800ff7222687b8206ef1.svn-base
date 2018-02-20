@@ -1,1 +1,0 @@
-$(function(){$("#slider").slider({value:60,min:60,max:220,step:1,slide:function(l,e){$("#width").val(e.value),$("#height").val(e.value)}}),$("#width").val($("#slider").slider("value")),$("#height").val($("#slider").slider("value"))});
