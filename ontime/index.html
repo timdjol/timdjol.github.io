@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:200,300,400,500,600,700,800&amp;subset=cyrillic" rel="stylesheet">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+
+
+<body>
+
+	<div class="preloader">
+		<img src="img/preloader.svg" alt="">
+	</div>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"><img src="img/logo.svg" class="img-responsive logo" alt="Logo"></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="menu-glavnaya-container">
+					<ul id="w1" class="navbar-nav nav">
+						<li class="active"><a href="#">Главная</a></li>
+						<li><a href="#preim">Преимущества</a></li>
+						<li><a href="#instruction">Инструкция</a></li>
+						<li><a href="#reviews">Отзывы</a></li>
+						<li><a href="#contacts">Контакты</a></li>
+						<li class="phone">+996 777 00 11 22</li>
+						<li><a href="#call" class="popup-with-form navbar-text navbar-right callback hidden-sm">Заказать звонок</a> </li>
+					</ul>
+					
+				</div>   
+
+			</div><!-- /.navbar-collapse -->
+
+		</div><!-- /.container-fluid -->
+		<svg height="20" width="2560" class="pattern">
+			<defs>
+				<pattern id="header-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+					<rect width="10" height="10"></rect>
+					<rect x="10" y="10" width="10" height="10"></rect>
+				</pattern>
+				<mask id="header-mask" x="0" y="0" width="2560" height="20">
+					<rect x="0" y="0" width="2560" height="20"></rect>
+				</mask>
+			</defs>
+			<rect x="0" y="0" width="2560" height="20" id="header-image"></rect>
+		</svg>
+	</nav>
+
+	<div id="testCarousel" class="carousel fade" data-ride="carousel">
+		<!-- Индикаторы карусели -->
+		<ol class="carousel-indicators">
+			<li data-target="#testCarousel" data-slide-to="0" ></li>
+			<li data-target="#testCarousel" data-slide-to="1" class="active"></li>
+			<li data-target="#testCarousel" data-slide-to="2"></li>
+		</ol>
+
+		<!-- Слайды карусели -->
+		<div class="carousel-inner">
+			<!-- Слайд 1 -->
+			<div class="item ">
+				<img src="img/home-09.jpg" alt="...">
+				<div class="carousel-caption">
+					<h3>Позвоните нам 24/7</h3>
+					<div class="phone-num">+996 777 00 11 22</div>
+					<a href="#call" class="send">Оставить заявку</a>
+				</div>
+			</div>
+			<!-- Слайд 2 -->
+			<div class="item active">
+				<img src="img/home-09.jpg" alt="...">
+				<div class="carousel-caption">
+					<h3>Только </h3>
+					<div class="phone-num">опытные водители</div>
+					<a href="#call" class="send">Оставить заявку</a>
+				</div>
+			</div>
+			<!-- Слайд 3 -->
+			<div class="item">
+				<img src="img/home-09.jpg" alt="...">
+				<div class="carousel-caption">
+					<h3>Качественное</h3>
+					<div class="phone-num">Обслуживание</div>
+					<a href="#call" class="send">Оставить заявку</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Навигация карусели (следующий или предыдущий слайд) -->
+		<a class="left carousel-control" href="#testCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a class="right carousel-control" href="#testCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+
+
+	<div class="container about" id="preim">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="small-title">Наши</div>
+				<h2>Преимущества</h2>
+			</div>
+		</div>
+		<div class="row df">
+			<div class="col-md-3">
+				<ul>
+					<li><i class="fa fa-trophy" aria-hidden="true"></i>Преимущество 1</li>
+					<li><i class="fa fa-trophy" aria-hidden="true"></i>Преимущество 1</li>
+					<li><i class="fa fa-trophy" aria-hidden="true"></i>Преимущество 1</li>
+					<li><i class="fa fa-trophy" aria-hidden="true"></i>Преимущество 1</li>
+				</ul>
+			</div>
+			<div class="col-md-6"><img src="img/about.png" alt=""></div>
+			<div class="col-md-3 right">
+				<ul>
+					<li>Преимущество 1<i class="fa fa-trophy" aria-hidden="true"></i></li>
+					<li>Преимущество 1<i class="fa fa-trophy" aria-hidden="true"></i></li>
+					<li>Преимущество 1<i class="fa fa-trophy" aria-hidden="true"></i></li>
+					<li>Преимущество 1<i class="fa fa-trophy" aria-hidden="true"></i></li>			
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid preim">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="small-title">достижения</div>
+						<h2>Почему Мы</h2>
+						<div class="col-sm-4">
+							<div class="preim-item">
+								<h3><span data-count="3"></span>года на рынке</h3>
+								<p>3 года успешной работы на рынке</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="preim-item">
+								<h3><span data-count="3"></span>года на рынке</h3>
+								<p>3 года успешной работы на рынке</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="preim-item">
+								<h3><span data-count="3"></span>года на рынке</h3>
+								<p>3 года успешной работы на рынке</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid instruct" id="instruction">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="small-title">как зарегистрироваться</div>
+						<h2>Инструкция</h2>
+						<div class="col-sm-4 ins-item1">
+							<div class="item">
+								<div class="overlay"></div>
+								<div class="num">1</div>
+								<div class="step">шаг</div>
+								<h4>Описание</h4>
+							</div>
+						</div>
+						<div class="col-sm-4 ins-item">
+							<div class="item">
+								<div class="overlay"></div>
+								<div class="num">2</div>
+								<div class="step">шаг</div>
+								<h4>Описание</h4>
+							</div>
+						</div>
+						<div class="col-sm-4 ins-item">
+							<div class="item">
+								<div class="overlay"></div>
+								<div class="num">3</div>
+								<div class="step">шаг</div>
+								<h4>Описание</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid call" id="call">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="small-title">хотите подключиться</div>
+						<h2>Оставьте заявку</h2>
+						<form action="">
+							<input type="text" placeholder="Ваше имя" class="inp">
+							<input type="text" placeholder="Ваш телефон" class="inp" required>
+							<input type="text" placeholder="Ваш email" class="inp">
+							<button class="send">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fluid faq">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="small-title">хотите узнать</div>
+				<h2>Вопросы-ответы</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-offset-1 col-sm-5">
+				<ul class="accordion">
+					<li>
+						<a>Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</a>
+						<p>Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+					</li>
+					<li>
+						<a>Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</a>
+						<p>Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+					</li>
+				</ul> <!-- / accordion -->
+			</div>
+
+			<div class="col-sm-6">
+				<img src="img/car-big-side.png" alt="">
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid reviews" id="reviews">
+		<div class="overlay"></div>
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="small-title">Прочитайте</div>
+						<h2>Отзывы клиентов</h2>
+						<div class="owl-carousel owl-reviews">
+							<div class="item">
+								<div class="descr">
+									Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+								</div>
+								<img src="img/testi-1.jpg" alt="">
+								<div class="name">Имя</div>
+							</div>
+
+							<div class="item">
+								<div class="descr">
+									Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+								</div>
+								<img src="img/testi-2.jpg" alt="">
+								<div class="name">Имя</div>
+							</div>
+
+							<div class="item">
+								<div class="descr">
+									Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+								</div>
+								<img src="img/testi-3.jpg" alt="">
+								<div class="name">Имя</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer id="contacts">
+		<div class="container-fluid footer">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="small-title">Свяжитесь с нами</div>
+					<h2>Контакты</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 maps">
+					<iframe src="https://yandex.ru/map-widget/v1/-/CBq5NEHP-B" width="100" height="450" frameborder="0"></iframe>
+				</div>
+				<div class="col-md-5">
+					<div class="row">
+						<div class="col-sm-6 address">
+							<h3>Адрес</h3>
+							<div class="address"><i class="fa fa-map-signs" aria-hidden="true"></i>г.Москва ул.Набережная 7/34</div>
+						</div>
+						<div class="col-sm-6">
+							<h3>Телефоны</h3>
+							<ul>
+								<li><i class="fa fa-phone"></i>+996 777 00 11 22</li>
+								<li><i class="fa fa-phone"></i>+996 777 00 11 22</li>
+							</ul>
+						</div>
+						<div class="col-sm-6">
+							<h3>Социальные сети</h3>
+							<ul class="soc">
+								<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="#" target="_blank"><i class="fa fa-vk"></i></a></li>
+							</ul>
+						</div>
+						<div class="col-sm-12">
+							<h3>Оставьте заявку</h3>
+							<form action="">
+								<input type="text" placeholder="Ваше имя" class="inp">
+								<input type="text" placeholder="Ваш телефон" class="inp" required>
+								<input type="text" placeholder="Ваш email" class="inp">
+								<button class="send">Отправить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<div class="copy container-fluid">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p>Все права защищены &copy; 2018</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="top" title="Наверх"><i class="fa fa-angle-double-up"></i></div>
+	
+	<link rel="stylesheet" href="css/main.min.css">
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
