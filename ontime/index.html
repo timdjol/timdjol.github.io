@@ -56,10 +56,11 @@
 					<ul id="w1" class="navbar-nav nav">
 						<li class="active"><a href="#">Главная</a></li>
 						<li><a href="#reviews">Отзывы</a></li>
+						<li><a href="#conditions">Условия</a></li>
 						<li><a href="#contacts">Контакты</a></li>
 						<li class="phone">+996 777 00 11 22</li>
 						<li class="phone">+996 777 00 11 22</li>
-						<li><a href="#call" class="popup-with-form navbar-text navbar-right callback hidden-sm">Заказать звонок</a> </li>
+						
 					</ul>
 					
 				</div>   
@@ -81,52 +82,31 @@
 		</svg>
 	</nav>
 
-	<div id="testCarousel" class="carousel fade" data-ride="carousel">
-		<!-- Индикаторы карусели -->
-		<ol class="carousel-indicators">
-			<li data-target="#testCarousel" data-slide-to="0" ></li>
-			<li data-target="#testCarousel" data-slide-to="1" class="active"></li>
-			<li data-target="#testCarousel" data-slide-to="2"></li>
-		</ol>
-
-		<!-- Слайды карусели -->
-		<div class="carousel-inner">
-			<!-- Слайд 1 -->
-			<div class="item ">
-				<img src="img/home-09.jpg" alt="...">
-				<div class="carousel-caption">
-					<h3>Позвоните нам 24/7</h3>
-					<div class="phone-num">+996 777 00 11 22</div>
-					<a href="#call" class="send">Оставить заявку</a>
-				</div>
-			</div>
-			<!-- Слайд 2 -->
-			<div class="item active">
-				<img src="img/home-09.jpg" alt="...">
-				<div class="carousel-caption">
-					<h3>Только </h3>
-					<div class="phone-num">опытные водители</div>
-					<a href="#call" class="send">Оставить заявку</a>
-				</div>
-			</div>
-			<!-- Слайд 3 -->
-			<div class="item">
-				<img src="img/home-09.jpg" alt="...">
-				<div class="carousel-caption">
-					<h3>Качественное</h3>
-					<div class="phone-num">Обслуживание</div>
-					<a href="#call" class="send">Оставить заявку</a>
+	<div class="container-fluid lozung">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<h1>Набор таксистов</h1>
+						<div class="descr">для граждан СНГ</div>
+						<div class="flags">
+							<ul>
+								<li><img src="img/kz.png" alt=""></li>
+								<li><img src="img/kg.png" alt=""></li>
+								<li><img src="img/uz.png" alt=""></li>
+								<li><img src="img/tj.png" alt=""></li>
+							</ul>
+						</div>
+						<div class="btn-wrap">
+							<a href="#callback" class="send">Оставить заявку</a>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						
+					</div>
 				</div>
 			</div>
 		</div>
-
-		<!-- Навигация карусели (следующий или предыдущий слайд) -->
-		<a class="left carousel-control" href="#testCarousel" role="button" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left"></span>
-		</a>
-		<a class="right carousel-control" href="#testCarousel" role="button" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right"></span>
-		</a>
 	</div>
 
 	<div class="container about" id="preim">
@@ -139,36 +119,64 @@
 		<div class="row df">
 			<div class="col-md-3">
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-6 col-sm-3 col-xs-6">
 						<div class="preim-item">
-								<img src="img/connection.svg" alt="">
-								<h3>Быстро подключаем</h3>
-							</div>
+							<img src="img/connection.svg" alt="">
+							<h3>Быстро подключаем</h3>
+						</div>
 					</div>
 
-					<div class="col-md-12">
+					<div class="col-md-6 col-sm-3 col-xs-6">
 						<div class="preim-item">
-								<img src="img/lower-prices.svg" alt="">
-								<h3>Дешево всего лишь 3%</h3>
-								
-							</div>
+							<img src="img/lower-prices.svg" alt="">
+							<h3>Дешево всего лишь 3%</h3>		
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-3 col-xs-6">
+						<div class="preim-item">
+							<img src="img/connection.svg" alt="">
+							<h3>Быстро подключаем</h3>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-3 col-xs-6">
+						<div class="preim-item">
+							<img src="img/lower-prices.svg" alt="">
+							<h3>Дешево всего лишь 3%</h3>		
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-6"><img src="img/about.png" alt=""></div>
+			<div class="col-md-6 image"><img src="img/about.png" alt=""></div>
 			<div class="col-md-3 right">
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-6 col-sm-3 col-xs-6">
 						<div class="preim-item">
-								<img src="img/stopwatch.svg" alt="">
-								<h3>Вовремя получаете свой доход</h3>	
-							</div>
+							<img src="img/stopwatch.svg" alt="">
+							<h3>Вовремя получаете свой доход</h3>	
+						</div>
+					</div>
 
-							<div class="col-md-12">
-								<div class="preim-item">
-								<img src="img/collaboration.svg" alt="">
-								<h3>Надежно-официальный партнер </h3>	
-								<div class="row partner">
+					<div class="col-md-6 col-sm-3 col-xs-6">
+						<div class="preim-item">
+							<img src="img/stopwatch.svg" alt="">
+							<h3>Вовремя получаете свой доход</h3>	
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-3 col-xs-6">
+						<div class="preim-item">
+							<img src="img/stopwatch.svg" alt="">
+							<h3>Вовремя получаете свой доход</h3>	
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-3 col-xs-6">
+						<div class="preim-item">
+							<img src="img/collaboration.svg" alt="">
+							<h3>Надежно-официальный партнер </h3>	
+								<!-- <div class="row partner">
 									<div class="col-md-4">
 										<img src="img/gett.png" alt="">
 									</div>
@@ -178,26 +186,26 @@
 									<div class="col-md-4">
 										<img src="img/uber.png" alt="">
 									</div>
-								</div>
+								</div> -->
 							</div>
-							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<div class="row">
-					<div class="col-md-12 connect" id="call">
-						<div class="small-title">хотите подключиться<br> г. Москва, также подключаем граждан Кыргызстана, Узбекистана, Таджикистана</div>
-						<h2>Оставьте заявку</h2>
-						<form action="">
-							<input type="text" placeholder="Ваше имя" class="inp">
-							<input type="text" placeholder="Ваш телефон" class="inp" required>
-							
-							<button class="send">Отправить</button>
-						</form>
-					</div>
-				</div>
+			<div class="col-md-12 connect" id="call">
+				<div class="small-title">хотите подключиться<br> г. Москва, также подключаем граждан Кыргызстана, Узбекистана, Таджикистана</div>
+				<h2>Оставьте заявку</h2>
+				<form action="">
+					<input type="text" placeholder="Ваше имя" class="inp">
+					<input type="text" placeholder="Ваш телефон" class="inp" required>
+
+					<button class="send">Отправить</button>
+				</form>
+			</div>
+		</div>
 	</div>
 
 
@@ -210,80 +218,215 @@
 					<div class="col-md-12">
 						<div class="small-title">Прочитайте</div>
 						<h2>Отзывы клиентов</h2>
-						<div class="owl-carousel owl-reviews">
+<!-- 						<div class="owl-carousel owl-reviews">
 							<div class="main-item">
 								<div class="item">
-								<div class="descr">
-									Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+									<div class="descr">
+										Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+									</div>
+									<img src="img/testi-1.jpg" alt="">
+									<div class="name">Имя</div>
 								</div>
+
+								<div class="item">
+									<div class="descr">
+										Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+									</div>
+									<img src="img/testi-2.jpg" alt="">
+									<div class="name">Имя</div>
+								</div>
+
+								<div class="item">
+									<div class="descr">
+										Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+									</div>
+									<img src="img/testi-3.jpg" alt="">
+									<div class="name">Имя</div>
+								</div>
+							</div>
+						</div> -->
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6 col-xs-6 rev-item">
+						<div class="row">
+							<div class="col-sm-3">
 								<img src="img/testi-1.jpg" alt="">
-								<div class="name">Имя</div>
 							</div>
-
-							<div class="item">
-								<div class="descr">
-									Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-								</div>
-								<img src="img/testi-2.jpg" alt="">
-								<div class="name">Имя</div>
-							</div>
-
-							<div class="item">
-								<div class="descr">
-									Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
-								</div>
-								<img src="img/testi-3.jpg" alt="">
-								<div class="name">Имя</div>
-							</div>
+							<div class="col-sm-9 descr">
+								Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Своего моей предупреждал решила оксмокс ему подпоясал это запятой, даже.
 							</div>
 						</div>
 					</div>
+					
+					<div class="col-sm-6 col-xs-6 rev-item">
+						<div class="row">
+							<div class="col-sm-3">
+								<img src="img/testi-1.jpg" alt="">
+							</div>
+							<div class="col-sm-9 descr">
+								Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Своего моей предупреждал решила оксмокс ему подпоясал это запятой, даже.
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-xs-6 rev-item">
+						<div class="row">
+							<div class="col-sm-3">
+								<img src="img/testi-1.jpg" alt="">
+							</div>
+							<div class="col-sm-9 descr">
+								Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Своего моей предупреждал решила оксмокс ему подпоясал это запятой, даже.
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-xs-6 rev-item">
+						<div class="row">
+							<div class="col-sm-3">
+								<img src="img/testi-1.jpg" alt="">
+							</div>
+							<div class="col-sm-9 descr">
+								Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Своего моей предупреждал решила оксмокс ему подпоясал это запятой, даже.
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
 	</div>
 
+	<div class="container numbers">
+		<div class="row">
+			<div class="col-sm-4 col-xs-12">
+				<div class="preim-item">
+					<h3><span data-count="500000"></span><span>+</span></h3>
+					<p>клиентов</p>
+				</div>
+			</div>
+			<div class="col-sm-4 col-xs-12">
+				<div class="preim-item">
+					<h3><span data-count="1500">+</span><span>+</span></h3>
+					<p>таксистов</p>
+				</div>
+			</div>
+			<div class="col-sm-4 col-xs-12">
+				<div class="preim-item">
+					<h3><span data-count="5">+</span><span>+</span></h3>
+					<p>лет опыта</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<h2>Средний заработок таксиста</h2>
+			<div class="col-sm-4 col-xs-12">
+				<div class="preim-item">
+					<h3><span>5/2</span></h3>
+					<p>40000 р/м</p>
+				</div>
+			</div>
+
+			<div class="col-sm-4 col-xs-12">
+				<div class="preim-item">
+					<h3><span>6/1</span></h3>
+					<p>60000 р/м</p>
+				</div>
+			</div>
+
+			<div class="col-sm-4 col-xs-12">
+				<div class="preim-item">
+					<h3><span>7/0</span></h3>
+					<p>70000 р/м</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="container-fluid conditions" id="conditions">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Условия работы</h2>
+					</div>
+				</div>
+				<div class="row df">
+					<div class="col-md-2"></div>
+					<div class="col-md-5 col-sm-7">
+						<ul>
+							<li>Далеко-далеко за словесными горами в стране</li>
+							<li>Далеко-далеко за словесными горами в стране</li>
+							<li>Далеко-далеко за словесными горами в стране</li>
+							<li>Далеко-далеко за словесными горами в стране</li>
+							<li>Далеко-далеко за словесными горами в стране</li>
+						</ul>
+					</div>
+
+					<div class="col-md-3 col-sm-5 call-form">
+						<h3>Оставить заявку</h3>
+						<form action="">
+							<input type="text" placeholder="Ваше имя" class="inp">
+							<input type="text" placeholder="Ваш телефон" class="inp" required>
+							<input type="text" placeholder="Ваш email" class="inp">
+							<button class="send">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<footer id="contacts">
 		<div class="container-fluid footer">
 			<div class="row">
-				<div class="col-md-12">
-					<div class="small-title">Свяжитесь с нами</div>
-					<h2>Контакты</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 maps">
-					<iframe src="https://yandex.ru/map-widget/v1/-/CBq5NEHP-B" width="100" height="450" frameborder="0"></iframe>
-				</div>
-				<div class="col-md-5">
+				<div class="container">
 					<div class="row">
-						<div class="col-sm-6 address">
-							<h3>Адрес</h3>
-							<div class="address"><i class="fa fa-map-signs" aria-hidden="true"></i>г.Москва ул.Набережная 7/34</div>
+						<div class="col-md-12">
+							<div class="small-title">Свяжитесь с нами</div>
+							<h2>Контакты</h2>
 						</div>
-						<div class="col-sm-6 phone">
-							<h3>Телефоны</h3>
-							<ul>
-								<li><i class="fa fa-phone"></i>+996 777 00 11 22</li>
-								<li><i class="fa fa-phone"></i>+996 777 00 11 22</li>
-							</ul>
+					</div>
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="address">
+								<h3>Адрес</h3>
+								<div class="address"><i class="fa fa-map-signs" aria-hidden="true"></i>г.Москва ул.Набережная 7/34</div>
+							</div>
 						</div>
-						<div class="col-sm-6">
-							<h3>Социальные сети</h3>
-							<ul class="soc">
-								<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
-								<li><a href="#" target="_blank"><i class="fa fa-vk"></i></a></li>
-							</ul>
+
+						<div class="col-sm-3">
+							<div class="phone">
+								<h3>Телефоны</h3>
+								<ul>
+									<li><i class="fa fa-phone"></i>+996 777 00 11 22</li>
+									<li><i class="fa fa-phone"></i>+996 777 00 11 22</li>
+								</ul>
+							</div>
 						</div>
-						<div class="col-sm-12">
-							<h3>Оставьте заявку</h3>
-							<form action="">
-								<input type="text" placeholder="Ваше имя" class="inp">
-								<input type="text" placeholder="Ваш телефон" class="inp" required>
-								<input type="text" placeholder="Ваш email" class="inp">
-								<button class="send">Отправить</button>
-							</form>
+
+						<div class="col-sm-3">
+							<div class="soc">
+								<h3>Социальные сети</h3>
+								<ul class="soc">
+									<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+									<li><a href="#" target="_blank"><i class="fa fa-vk"></i></a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-sm-3">
+							<div class="req">
+								<h3>Реквизиты</h3>
+								<ul>
+									<li>ИНН 7726699254</li>
+									<li>КПП 503601001</li>
+									<li>Р/с 40702810802160000266</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -305,6 +448,27 @@
 
 
 	<div class="top" title="Наверх"><i class="fa fa-angle-double-up"></i></div>
+
+	<div class="hidden">
+
+			<form id="callback" class="contact-form form-callback">
+
+				<div class="contact-form-head">
+					<h3>Оставить заявку</h3>
+					<p>Оставьте заявку и мы с вами скоро свяжемся.</p>
+				</div>
+				<input type="text" name="name" class="inp" placeholder="Ваше имя..." required=""/>
+				<input type="tel" name="phone" class="inp" placeholder="Ваш телефон..." required=""/>
+				<input type="email" name="email" class="inp" placeholder="Ваш email..." required=""/>
+			
+
+				<div class="text-center">
+					<button class="send">Отправить</button>
+				</div>
+
+			</form>
+
+		</div>
 	
 	<link rel="stylesheet" href="css/main.min.css">
 
