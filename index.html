@@ -41,7 +41,7 @@
 
 <body oncontextmenu="return false" oncopy="return false;" onselectstart="return false;">
 
-	<span itemscope itemtype="http://schema.org/LocalBusiness"/>
+ 	<span itemscope itemtype="http://schema.org/LocalBusiness"/>
 
 	<div class="preloader"></div>
 	<header>
@@ -1168,8 +1168,11 @@
 							<h4>Оставить заявку</h4>
 							<p>Оставьте заявку и я с вами скоро свяжусь.</p>
 						</div>
-						<input type="text" name="name" class="form-control" placeholder="Ваше имя..." required=""/>
-						<input type="tel" name="phone" class="form-control" placeholder="Ваш телефон..." required=""/>
+						<!-- <input type="text" name="name" class="form-control" placeholder="Ваше имя..." required=""/>
+						<input type="tel" name="phone" class="form-control" placeholder="Ваш телефон..." required=""/> -->
+
+						<div class="frm_field"><input name="name" class="form-control" type="text" placeholder="Ваше имя..."></div>
+        		<div class="frm_field"><span class="country_name"></span><input name="phone" type="tel" class="form-control" value="" data-inputmask="'alias': 'phone'" placeholder="Ваш телефон..."></div>
 
 
 						<div class="text-center">
