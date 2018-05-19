@@ -47,6 +47,8 @@ AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml appl
 RewriteCond %{HTTP_HOST} ^www\.(.*)$
 RewriteRule ^(.*)$ http://%1/$1 [L,R=301]
 
-RewriteCond %{SERVER_PORT} ^80$ [OR]
-RewriteCond %{HTTP} =on
-RewriteRule ^(.*)$ https://timdjol.com/$1 [R=301,L]
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.timdjol.github.io\.ru$ [NC]
+RewriteRule ^(.*)$ https://timdjol.com/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^timdjol.github.io\.ru$ [NC]
+RewriteRule ^(.*)$ https://timdjol.com/$1 [L,R=301]
